@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 弹出框（Popover）插件</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+    <ul class="panel-group nav" id="nav">
+        <li class="panel panel-default">
+            <button data-toggle="collapse" data-target="#first" data-parent="#nav"
+                    class= "btn btn-primary">主菜单一：订餐系统</button>
+            <ul id="first" class="collapse nav">
+                <li><button data-toggle="tab" data-target="#11" class= "btn btn-success">就餐时间</button></li>
+                <li><button data-toggle="tab" data-target="#12" class= "btn btn-success">就餐地点</button></li>
+            </ul>
+        </li>
+        <li class="panel panel-default">
+            <button data-toggle="collapse" data-target="#second" data-parent="#nav"
+                    class= "btn btn-primary">主菜单二：选课系统</button>
+            <ul id="second" class="collapse nav">
+                <li><button data-toggle="tab" data-target="#21" class= "btn btn-success">选课时间</button></li>
+                <li><button data-toggle="tab" data-target="#22" class= "btn btn-success">选课科目</button></li>
+            </ul>
+
+        </li>
+        <li class="panel panel-default">
+            <button data-toggle="collapse" data-target="#third" data-parent="#nav"
+                    class= "btn btn-primary">主菜单三：活动系统</button>
+            <ul id="third" class="collapse nav">
+                <li><button data-toggle="tab" data-target="#31"  class= "btn btn-success">活动主题</button></li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+
+<div id="content" class="tab-content">
+    <div id="11" class="tab-pane">就餐时间  等等好多信息。。。。===》》》》</div>
+    <div id="12" class="tab-pane"><p>HI</p>就餐地点  等等好多信息。。。。===》》》》</div>
+    <div id="21" class="tab-pane"><div class= "btn btn-info">Good</div>选课时间  等等好多信息。。。。===》》》》</div>
+    <div id="22" class="tab-pane"><ul class= "nav nav-pills"><li>传统菜单栏一 <li> <li>传统菜单栏二 <li></ul>就餐科目  等等好多信息。。。。===》》》》</div>
+    <div id="31" class="tab-pane"><button>SEE</button>活动系统  等等好多信息。。。。===》》》》</div>
+</div>
+
+</body>
+</html>
